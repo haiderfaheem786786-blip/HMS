@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rooms Management</title>
+
+    <link rel="stylesheet" href="rooms-management.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <h1>Rooms Management</h1>
+                <p>Manage hotel rooms</p>
+            </div>
+
+   <button id="addRoomBtn" class="add-room-btn">+ Add New Room</button>
+          <a href="admin-dashboard.html" class="back-btn">Back</a>
+
+        </div>
+
+        <div class="top-bar">
+
+            <input type="text" id="searchRoom" placeholder="Search room...">
+
+            <select id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="available">Available</option>
+                <option value="occupied">Occupied</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+
+        </div>
+
+        <div class="table-box">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Room No.</th>
+                        <th>Room Type</th>
+                        <th>Floor</th>
+                        <th>Capacity</th>
+                        <th>Price / Night</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>101</td>
+                        <td>Deluxe</td>
+                        <td>1st</td>
+                        <td>2 Guests</td>
+                        <td>Rs. 5,000</td>
+                        <td>
+                            <span class="status available">Available</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Standard</td>
+                        <td>1st</td>
+                        <td>2 Guests</td>
+                        <td>Rs. 3,500</td>
+                        <td>
+                            <span class="status occupied">Occupied</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>201</td>
+                        <td>Family</td>
+                        <td>2nd</td>
+                        <td>4 Guests</td>
+                        <td>Rs. 8,000</td>
+                        <td>
+                            <span class="status available">Available</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>301</td>
+                        <td>Luxury</td>
+                        <td>3rd</td>
+                        <td>2 Guests</td>
+                        <td>Rs. 12,000</td>
+                        <td>
+                            <span class="status maintenance">Maintenance</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="rooms-management.js"></script>
+
+</body>
+</html>

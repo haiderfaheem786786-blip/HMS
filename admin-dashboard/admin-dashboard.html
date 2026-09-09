@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Hotel Admin</h2>
+
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="../rooms-management/rooms-management.html">Rooms</a></li>
+                <li><a href="../bookings/bookings.html">Bookings</a></li>
+                <li><a href="../customers/customers.html">Customers</a></li>
+                <li><a href="../billing/billing.html">Payments</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <h1>Admin Dashboard</h1>
+                <p>Welcome, Admin</p>
+            </header>
+
+            <!-- Dashboard Cards -->
+            <section class="cards">
+
+                <div class="card">
+                    <h3>Total Rooms</h3>
+                    <p id="totalRooms">50</p>
+                </div>
+
+                <div class="card">
+                    <h3>Occupied Rooms</h3>
+                    <p id="occupiedRooms">32</p>
+                </div>
+
+                <div class="card">
+                    <h3>Available Rooms</h3>
+                    <p id="availableRooms">18</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Customers</h3>
+                    <p id="totalCustomers">120</p>
+                </div>
+
+            </section>
+
+            <!-- Recent Bookings -->
+            <section class="bookings">
+                <h2>Recent Bookings</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Room</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Ali</td>
+                            <td>101</td>
+                            <td>07 Sep 2026</td>
+                            <td>09 Sep 2026</td>
+                            <td>Booked</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ahmed</td>
+                            <td>205</td>
+                            <td>07 Sep 2026</td>
+                            <td>10 Sep 2026</td>
+                            <td>Checked In</td>
+                        </tr>
+
+                        <tr>
+                            <td>Usman</td>
+                            <td>302</td>
+                            <td>06 Sep 2026</td>
+                            <td>08 Sep 2026</td>
+                            <td>Booked</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+<script src="admin-dashboard.js"></script>
+</body>
+</html>
+```

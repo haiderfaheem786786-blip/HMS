@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+
+    <link rel="stylesheet" href="customer-dashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>Hotel Guest</h2>
+
+        <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">My Bookings</a></li>
+            <li><a href="#">Book Room</a></li>
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="top-header">
+            <div>
+                <h1>Customer Dashboard</h1>
+                <p>Welcome back, Faheem!</p>
+            </div>
+
+            <div class="customer-info">
+                <span>👤</span>
+                <strong>Customer</strong>
+            </div>
+        </header>
+
+
+        <!-- Dashboard Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Bookings</h3>
+                <p>5</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Booking</h3>
+                <p>1</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Stays</h3>
+                <p>4</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Payment</h3>
+                <p>Rs. 45,000</p>
+            </div>
+
+        </section>
+
+
+        <!-- Current Booking -->
+        <section class="section-box">
+
+            <div class="section-header">
+                <h2>Current Booking</h2>
+                <button>View Details</button>
+            </div>
+
+            <div class="booking-details">
+
+                <div>
+                    <span>Booking ID</span>
+                    <strong>#BK005</strong>
+                </div>
+
+                <div>
+                    <span>Room</span>
+                    <strong>205</strong>
+                </div>
+
+                <div>
+                    <span>Room Type</span>
+                    <strong>Deluxe</strong>
+                </div>
+
+                <div>
+                    <span>Check In</span>
+                    <strong>07 Sep 2026</strong>
+                </div>
+
+                <div>
+                    <span>Check Out</span>
+                    <strong>10 Sep 2026</strong>
+                </div>
+
+                <div>
+                    <span>Status</span>
+                    <strong class="status">Confirmed</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Bookings -->
+        <section class="section-box">
+
+            <div class="section-header">
+                <h2>Recent Bookings</h2>
+                <button>View All</button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Room</th>
+                        <th>Check In</th>
+                        <th>Check Out</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#BK005</td>
+                        <td>205</td>
+                        <td>07 Sep 2026</td>
+                        <td>10 Sep 2026</td>
+                        <td>Rs. 15,000</td>
+                        <td><span class="confirmed">Confirmed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>#BK004</td>
+                        <td>103</td>
+                        <td>05 Sep 2026</td>
+                        <td>07 Sep 2026</td>
+                        <td>Rs. 8,000</td>
+                        <td><span class="completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>#BK003</td>
+                        <td>302</td>
+                        <td>01 Sep 2026</td>
+                        <td>03 Sep 2026</td>
+                        <td>Rs. 5,000</td>
+                        <td><span class="completed">Completed</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="customer-dashboard.js"></script>
+
+</body>
+</html>

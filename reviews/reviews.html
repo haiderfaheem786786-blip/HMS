@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reviews Management</title>
+
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div>
+                <h1>Reviews Management</h1>
+                <p>Manage customer reviews and ratings</p>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Reviews</h3>
+                <h2>120</h2>
+            </div>
+
+            <div class="card">
+                <h3>Approved Reviews</h3>
+                <h2>105</h2>
+            </div>
+
+            <div class="card">
+                <h3>Pending Reviews</h3>
+                <h2>10</h2>
+            </div>
+
+            <div class="card">
+                <h3>Average Rating</h3>
+                <h2>4.5 ⭐</h2>
+            </div>
+
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search review...">
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Review ID</th>
+                        <th>Customer</th>
+                        <th>Room</th>
+                        <th>Rating</th>
+                        <th>Review</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#RV001</td>
+                        <td>Ali</td>
+                        <td>101</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Excellent service and clean room.</td>
+                        <td>07 Sep 2026</td>
+                        <td>
+                            <span class="status approved">Approved</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#RV002</td>
+                        <td>Ahmed</td>
+                        <td>205</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Very good hotel and friendly staff.</td>
+                        <td>06 Sep 2026</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#RV003</td>
+                        <td>Usman</td>
+                        <td>302</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Room was good but service was slow.</td>
+                        <td>05 Sep 2026</td>
+                        <td>
+                            <span class="status approved">Approved</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#RV004</td>
+                        <td>Hassan</td>
+                        <td>103</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Great experience. Highly recommended.</td>
+                        <td>04 Sep 2026</td>
+                        <td>
+                            <span class="status rejected">Rejected</span>
+                        </td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="reviews.js"></script>
+
+</body>
+</html>

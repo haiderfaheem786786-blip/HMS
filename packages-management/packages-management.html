@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Packages Management</title>
+
+    <link rel="stylesheet" href="packages-management.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div>
+                <h1>Packages Management</h1>
+                <p>Manage hotel packages</p>
+            </div>
+
+            <button class="add-btn">+ Add Package</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search package...">
+        </div>
+
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Package ID</th>
+                        <th>Package Name</th>
+                        <th>Room Type</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>Services</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#PK001</td>
+                        <td>Standard Package</td>
+                        <td>Standard</td>
+                        <td>1 Night</td>
+                        <td>Rs. 5,000</td>
+                        <td>Breakfast, Wi-Fi</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#PK002</td>
+                        <td>Deluxe Package</td>
+                        <td>Deluxe</td>
+                        <td>1 Night</td>
+                        <td>Rs. 8,000</td>
+                        <td>Breakfast, Pool, Wi-Fi</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#PK003</td>
+                        <td>Family Package</td>
+                        <td>Family</td>
+                        <td>2 Nights</td>
+                        <td>Rs. 12,000</td>
+                        <td>Meals, Kids Area</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#PK004</td>
+                        <td>Luxury Package</td>
+                        <td>Luxury</td>
+                        <td>2 Nights</td>
+                        <td>Rs. 18,000</td>
+                        <td>Meals, Spa, Pool</td>
+                        <td>
+                            <span class="status inactive">Inactive</span>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="packages-management.js"></script>
+
+</body>
+</html>

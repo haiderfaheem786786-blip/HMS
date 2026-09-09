@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookings</title>
+
+    <link rel="stylesheet" href="bookings.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>Bookings</h1>
+                <p>Manage Hotel Bookings</p>
+            </div>
+
+            <button class="add-btn">+ Add New Booking</button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="Search customer or room number...">
+            <button>Search</button>
+        </div>
+
+        <!-- Booking Table -->
+        <div class="booking-box">
+
+            <h2>All Bookings</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Customer</th>
+                            <th>Room</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Guests</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>#BK001</td>
+                            <td>Ali</td>
+                            <td>101</td>
+                            <td>07 Sep 2026</td>
+                            <td>09 Sep 2026</td>
+                            <td>2</td>
+                            <td>Rs. 10,000</td>
+                            <td>
+                                <span class="status confirmed">
+                                    Confirmed
+                                </span>
+                            </td>
+                            <td>
+                                <button class="view-btn">View</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#BK002</td>
+                            <td>Ahmed</td>
+                            <td>205</td>
+                            <td>07 Sep 2026</td>
+                            <td>10 Sep 2026</td>
+                            <td>3</td>
+                            <td>Rs. 15,000</td>
+                            <td>
+                                <span class="status checked">
+                                    Checked In
+                                </span>
+                            </td>
+                            <td>
+                                <button class="view-btn">View</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#BK003</td>
+                            <td>Usman</td>
+                            <td>302</td>
+                            <td>06 Sep 2026</td>
+                            <td>08 Sep 2026</td>
+                            <td>1</td>
+                            <td>Rs. 5,000</td>
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+                            <td>
+                                <button class="view-btn">View</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#BK004</td>
+                            <td>Hassan</td>
+                            <td>103</td>
+                            <td>05 Sep 2026</td>
+                            <td>07 Sep 2026</td>
+                            <td>2</td>
+                            <td>Rs. 8,000</td>
+                            <td>
+                                <span class="status cancelled">
+                                    Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <button class="view-btn">View</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="bookings.js"></script>
+
+</body>
+</html>
+```
