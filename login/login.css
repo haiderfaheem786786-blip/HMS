@@ -10,69 +10,116 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f2f2f2;
+    background: #080b1d;
+    color: white;
 }
 
+/* Login Container */
 .login-container {
     width: 400px;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    padding: 35px;
+    background: #151936;
+    border: 1px solid #282d52;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+/* Main Heading */
 .login-container h1 {
     text-align: center;
     margin-bottom: 10px;
-    color: #333;
-    font-size: 25px;
+    color: white;
+    font-size: 28px;
 }
 
+/* Login Heading */
 .login-container h2 {
     text-align: center;
-    margin-bottom: 25px;
-    color: #555;
+    margin-bottom: 30px;
+    color: #a5acd6;
+    font-size: 20px;
 }
 
+/* Labels */
 .login-container label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 
+/* Inputs and Select */
 .login-container input,
 .login-container select {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #282d52;
+    border-radius: 8px;
     font-size: 15px;
+    background: #10132d;
+    color: white;
 }
 
+/* Input Placeholder */
+.login-container input::placeholder {
+    color: #777da5;
+}
+
+/* Input Focus */
 .login-container input:focus,
 .login-container select:focus {
     outline: none;
-    border-color: #555;
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
 }
 
+/* Select Option */
+.login-container select option {
+    background: #151936;
+    color: white;
+}
+
+/* Login Button */
 .login-container button {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     border: none;
-    border-radius: 5px;
-    background: #333;
+    border-radius: 8px;
+    background: #6c5ce7;
     color: white;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+/* Button Hover */
 .login-container button:hover {
-    background: #555;
+    background: #7c6ff0;
+    transform: translateY(-2px);
 }
 
+/* Message */
 #message {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 18px;
+    color: #a5acd6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+
+    .login-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+    }
+
+    .login-container h2 {
+        font-size: 18px;
+    }
 }
