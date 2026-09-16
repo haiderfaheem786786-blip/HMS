@@ -1,4 +1,3 @@
-css
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,8 @@ css
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #080b1d;
+    color: white;
     padding: 30px;
 }
 
@@ -19,79 +19,107 @@ body {
 /* Header */
 
 .header {
-    background-color: white;
+    background-color: #151936;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .header h1 {
-    color: #1f2937;
+    color: white;
     margin-bottom: 8px;
 }
 
 .header p {
-    color: #6b7280;
+    color: #a5acd6;
 }
 
 .add-btn {
-    background-color: #2563eb;
+    background-color: #6c5ce7;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .add-btn:hover {
-    background-color: #1d4ed8;
+    background-color: #7c6ff0;
+    transform: translateY(-2px);
 }
-
+.header-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* Search */
 
 .search-box {
-    background-color: white;
+    background-color: #151936;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+    border: 1px solid #282d52;
 }
 
 .search-box input {
     flex: 1;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #282d52;
+    border-radius: 7px;
     font-size: 15px;
     outline: none;
+    background-color: #10132d;
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #777da5;
+}
+
+.search-box input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
 }
 
 .search-box button {
-    background-color: #374151;
+    background-color: #4f46a5;
     color: white;
     border: none;
     padding: 12px 25px;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #6258c7;
 }
 
 /* Booking Box */
 
 .booking-box {
-    background-color: white;
+    background-color: #151936;
     padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .booking-box h2 {
     margin-bottom: 20px;
-    color: #1f2937;
+    color: white;
 }
 
 /* Table */
@@ -108,18 +136,22 @@ table {
 table th,
 table td {
     padding: 14px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #282d52;
     text-align: left;
     white-space: nowrap;
 }
 
 table th {
-    background-color: #f1f1f1;
-    color: #374151;
+    background-color: #10132d;
+    color: white;
+}
+
+table td {
+    color: #d8daf0;
 }
 
 table tr:hover {
-    background-color: #f9fafb;
+    background-color: #1d2145;
 }
 
 /* Status */
@@ -131,24 +163,32 @@ table tr:hover {
     font-weight: bold;
 }
 
+/* Confirmed */
+
 .confirmed {
-    background-color: #dcfce7;
-    color: #166534;
+    background-color: #243b35;
+    color: #86efac;
 }
+
+/* Checked */
 
 .checked {
-    background-color: #dbeafe;
-    color: #1e40af;
+    background-color: #26345a;
+    color: #93c5fd;
 }
+
+/* Pending */
 
 .pending {
-    background-color: #fef3c7;
-    color: #92400e;
+    background-color: #493d24;
+    color: #fcd34d;
 }
 
+/* Cancelled */
+
 .cancelled {
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: #4a292f;
+    color: #fca5a5;
 }
 
 /* Action Buttons */
@@ -157,26 +197,32 @@ table tr:hover {
 .delete-btn {
     border: none;
     padding: 7px 12px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     color: white;
     margin-right: 4px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+/* View Button */
+
 .view-btn {
-    background-color: #2563eb;
+    background-color: #6c5ce7;
 }
 
 .view-btn:hover {
-    background-color: #1d4ed8;
+    background-color: #7c6ff0;
 }
 
+/* Delete Button */
+
 .delete-btn {
-    background-color: #dc2626;
+    background-color: #7f1d1d;
 }
 
 .delete-btn:hover {
-    background-color: #b91c1c;
+    background-color: #991b1b;
 }
 
 /* Responsive */
@@ -196,6 +242,7 @@ table tr:hover {
     .add-btn {
         width: 100%;
     }
+    
 
     .search-box {
         flex-direction: column;
@@ -204,5 +251,12 @@ table tr:hover {
     .search-box button {
         width: 100%;
     }
-}
 
+    .booking-box {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}

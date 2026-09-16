@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    background: #080b1d;
+    color: white;
 }
 
 .container {
@@ -15,6 +15,9 @@ body {
     max-width: 1200px;
     margin: 30px auto;
 }
+
+
+/* Header */
 
 .header {
     display: flex;
@@ -26,26 +29,38 @@ body {
 .header h1 {
     font-size: 30px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .header p {
-    color: #777;
+    color: #a5acd6;
 }
 
 .add-btn {
-    background: #007bff;
+    background: #6c5ce7;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.add-btn:hover {
+    background: #7c6ff0;
+    transform: translateY(-2px);
+}
+
+
+/* Top Section */
+
 .top-section {
-    background: white;
+    background: #151936;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 25px;
+    border: 1px solid #282d52;
 
     display: flex;
     gap: 15px;
@@ -54,13 +69,29 @@ body {
 .top-section input,
 .top-section select {
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #282d52;
+    border-radius: 7px;
+    outline: none;
+    background: #10132d;
+    color: white;
+}
+
+.top-section input::placeholder {
+    color: #777da5;
+}
+
+.top-section input:focus,
+.top-section select:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
 }
 
 .top-section input {
     width: 300px;
 }
+
+
+/* Rooms */
 
 .rooms-container {
     display: grid;
@@ -69,10 +100,11 @@ body {
 }
 
 .room-card {
-    background: white;
+    background: #151936;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 10px #ddd;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .room-image img {
@@ -88,7 +120,11 @@ body {
 .room-content h2 {
     display: inline-block;
     margin-right: 10px;
+    color: white;
 }
+
+
+/* Status */
 
 .status {
     display: inline-block;
@@ -96,38 +132,46 @@ body {
     border-radius: 20px;
     font-size: 13px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .available {
-    background: #d4edda;
-    color: #155724;
+    background: #243b35;
+    color: #86efac;
 }
 
 .occupied {
-    background: #f8d7da;
-    color: #721c24;
+    background: #4a292f;
+    color: #fca5a5;
 }
 
 .maintenance {
-    background: #fff3cd;
-    color: #856404;
+    background: #4a3d20;
+    color: #fde68a;
 }
+
+
+/* Room Content */
 
 .room-content p {
     margin: 8px 0;
-    color: #666;
+    color: #a5acd6;
 }
 
 .room-content h3 {
     margin-top: 15px;
     font-size: 20px;
+    color: white;
 }
 
 .room-content h3 span {
     font-size: 13px;
-    color: #777;
+    color: #a5acd6;
     font-weight: normal;
 }
+
+
+/* Buttons */
 
 .buttons {
     display: flex;
@@ -138,18 +182,31 @@ body {
 .buttons button {
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .view-btn {
-    background: #28a745;
+    background: #6c5ce7;
+}
+
+.view-btn:hover {
+    background: #7c6ff0;
 }
 
 .edit-btn {
-    background: #007bff;
+    background: #6c5ce7;
 }
+
+.edit-btn:hover {
+    background: #7c6ff0;
+}
+
+
+/* Responsive */
 
 @media (max-width: 768px) {
 

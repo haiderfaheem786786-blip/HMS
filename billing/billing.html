@@ -23,27 +23,31 @@
             <h2>Customer Information</h2>
 
             <div class="form-row">
+
                 <div class="form-group">
                     <label>Customer Name</label>
-                    <input type="text" placeholder="Enter customer name">
+                    <input type="text" id="customerName" placeholder="Enter customer name">
                 </div>
 
                 <div class="form-group">
                     <label>Room Number</label>
-                    <input type="text" placeholder="Enter room number">
+                    <input type="text" id="roomNumber" placeholder="Enter room number">
                 </div>
+
             </div>
 
             <div class="form-row">
+
                 <div class="form-group">
                     <label>Check In</label>
-                    <input type="date">
+                    <input type="date" id="checkIn">
                 </div>
 
                 <div class="form-group">
                     <label>Check Out</label>
-                    <input type="date">
+                    <input type="date" id="checkOut">
                 </div>
+
             </div>
         </div>
 
@@ -64,20 +68,28 @@
                 <tbody>
                     <tr>
                         <td>Room Charges</td>
-                        <td>2 Nights</td>
-                        <td>5000</td>
-                        <td>10000</td>
+                        <td id="daysStayed">2 Nights</td>
+                        <td id="roomRate">5000</td>
+                        <td id="roomCharges">10000</td>
                     </tr>
 
                     <tr>
                         <td>Food</td>
-                        <td>2</td>
-                        <td>1000</td>
-                        <td>2000</td>
+                        <td id="foodQuantity">2</td>
+                        <td id="foodPrice">1000</td>
+                        <td id="foodCharges">2000</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
+            <div class="section">
+    <h2>Customer Bill Information</h2>
+
+    <p>Customer Name: <span id="billCustomerName"></span></p>
+    <p>Room Number: <span id="billRoomNumber"></span></p>
+    <p>Check In: <span id="billCheckIn"></span></p>
+    <p>Check Out: <span id="billCheckOut"></span></p>
+</div>
+        
 
         <!-- Bill Summary -->
         <div class="summary">
@@ -85,24 +97,27 @@
 
             <div class="summary-row">
                 <span>Subtotal:</span>
-                <span>Rs. 12000</span>
+                <span id="subTotal">Rs. 12000</span>
             </div>
 
             <div class="summary-row">
                 <span>Tax:</span>
-                <span>Rs. 1200</span>
+                <span id="taxAmount">Rs. 1200</span>
             </div>
 
             <div class="summary-row total">
-                <span>Grand Total:</span>
-                <span>Rs. 13200</span>
+                <span >Grand Total:</span>
+                <span id="grandTotal">Rs. 13200</span>
             </div>
         </div>
 
         <!-- Buttons -->
         <div class="buttons">
-            <button class="generate-btn">Generate Bill</button>
-            <button class="print-btn" onclick="window.print()">Print Bill</button>
+            <button id="generateBtn" class="generate-btn">Generate Bill</button>
+
+            <button class="print-btn" onclick="window.print()">
+                Print Bill
+            </button>
         </div>
 
     </div>

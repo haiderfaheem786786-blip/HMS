@@ -10,4 +10,13 @@ registerForm.addEventListener('submit', function(event) {
         alert('Passwords do not match');
         return;
     } 
-})
+    let userData = {
+        name: name,
+        email: email,
+        password: password,
+        role: role
+    };
+    localStorage.setItem('userData', JSON.stringify(userData));
+    alert('Registration successful');
+    window.location.href = '../login/login.html';
+});

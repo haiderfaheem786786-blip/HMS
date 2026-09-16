@@ -6,14 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
-    color: #333;
+    background: #080b1d;
+    color: white;
 }
 
 .container {
     width: 90%;
     margin: 30px auto;
 }
+
+
+/* Header */
 
 .header {
     display: flex;
@@ -25,24 +28,31 @@ body {
 .header h1 {
     font-size: 30px;
     margin-bottom: 8px;
+    color: white;
 }
 
 .header p {
-    color: #777;
+    color: #a5acd6;
 }
 
 .add-btn {
-    background-color: #1f6feb;
+    background: #6c5ce7;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 6px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .add-btn:hover {
-    background-color: #1558b0;
+    background: #7c6ff0;
+    transform: translateY(-2px);
 }
+
+
+/* Packages */
 
 .packages {
     display: grid;
@@ -51,27 +61,38 @@ body {
 }
 
 .package-card {
-    background-color: white;
+    background: #151936;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    border-color: #6c5ce7;
 }
 
 .package-card h2 {
     margin-bottom: 15px;
     font-size: 22px;
+    color: white;
 }
 
 .price {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #8b7cff;
 }
 
 .price span {
     font-size: 14px;
     font-weight: normal;
-    color: #777;
+    color: #a5acd6;
 }
 
 .package-card ul {
@@ -81,22 +102,27 @@ body {
 
 .package-card ul li {
     margin-bottom: 12px;
-    color: #555;
+    color: #d8daf0;
 }
 
 .package-card button {
     width: 100%;
     padding: 11px;
     border: none;
-    border-radius: 6px;
-    background-color: #28a745;
+    border-radius: 7px;
+    background: #6c5ce7;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .package-card button:hover {
-    background-color: #218838;
+    background: #7c6ff0;
 }
+
+
+/* Responsive */
 
 @media (max-width: 1000px) {
     .packages {

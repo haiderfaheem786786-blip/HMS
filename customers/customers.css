@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    background: #080b1d;
+    color: white;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 /* Header */
 
 .header {
-    background: white;
+    background: #151936;
     padding: 25px;
 
     display: flex;
@@ -28,36 +28,43 @@ body {
 
     border-radius: 10px;
     margin-bottom: 20px;
+
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .header h1 {
     margin-bottom: 6px;
+    color: white;
 }
 
 .header p {
-    color: #777;
+    color: #a5acd6;
 }
 
 .add-btn {
-    background: #2563eb;
+    background: #6c5ce7;
     color: white;
 
     border: none;
     padding: 12px 20px;
 
-    border-radius: 6px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .add-btn:hover {
-    background: #1d4ed8;
+    background: #7c6ff0;
+    transform: translateY(-2px);
 }
 
 
 /* Search */
 
 .search-section {
-    background: white;
+    background: #151936;
     padding: 20px;
 
     display: flex;
@@ -65,6 +72,8 @@ body {
 
     border-radius: 10px;
     margin-bottom: 20px;
+
+    border: 1px solid #282d52;
 }
 
 .search-section input {
@@ -72,33 +81,55 @@ body {
 
     padding: 12px;
 
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #282d52;
+    border-radius: 7px;
 
     font-size: 15px;
+    outline: none;
+
+    background: #10132d;
+    color: white;
+}
+
+.search-section input::placeholder {
+    color: #777da5;
+}
+
+.search-section input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
 }
 
 .search-btn {
-    background: #333;
+    background: #4f46a5;
     color: white;
 
     border: none;
     padding: 12px 22px;
 
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #6258c7;
 }
 
 
 /* Table */
 
 .table-container {
-    background: white;
+    background: #151936;
     padding: 20px;
 
     border-radius: 10px;
 
     overflow-x: auto;
+
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 table {
@@ -111,71 +142,82 @@ td {
     padding: 15px;
     text-align: left;
 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #282d52;
 }
 
 th {
-    background: #f8fafc;
+    background: #10132d;
+    color: white;
+}
+
+td {
+    color: #d8daf0;
 }
 
 tr:hover {
-    background: #f9fafb;
+    background: #1d2145;
 }
 
 
 /* Status */
 
 .active {
-    background: #dcfce7;
-    color: #15803d;
+    background: #243b35;
+    color: #86efac;
 
     padding: 6px 10px;
     border-radius: 15px;
 
     font-size: 13px;
+    font-weight: bold;
 }
 
 .inactive {
-    background: #fee2e2;
-    color: #dc2626;
+    background: #4a292f;
+    color: #fca5a5;
 
     padding: 6px 10px;
     border-radius: 15px;
 
     font-size: 13px;
+    font-weight: bold;
 }
 
 
 /* Action Buttons */
 
 .view-btn {
-    background: #2563eb;
+    background: #6c5ce7;
     color: white;
 
     border: none;
     padding: 7px 12px;
 
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .delete-btn {
-    background: #dc2626;
+    background: #7f1d1d;
     color: white;
 
     border: none;
     padding: 7px 12px;
 
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .view-btn:hover {
-    background: #1d4ed8;
+    background: #7c6ff0;
 }
 
 .delete-btn:hover {
-    background: #b91c1c;
+    background: #991b1b;
 }
 
 
@@ -187,6 +229,10 @@ tr:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+
+    .add-btn {
+        width: 100%;
     }
 
     .search-section {

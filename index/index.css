@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background: #f5f5f5;
+    color: white;
+    background: #080b1d;
 }
 
 
@@ -15,7 +15,7 @@ body {
 
 .navbar {
     height: 70px;
-    background: white;
+    background: #151936;
 
     display: flex;
     align-items: center;
@@ -23,11 +23,12 @@ body {
 
     padding: 0 50px;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #282d52;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .logo h2 {
-    color: #1f2937;
+    color: white;
 }
 
 .nav-links {
@@ -38,12 +39,13 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #d8daf0;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #2563eb;
+    color: #7c6ff0;
 }
 
 
@@ -59,16 +61,26 @@ body {
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .login-btn {
-    color: #2563eb;
-    border: 1px solid #2563eb;
+    color: #a5acd6;
+    border: 1px solid #6c5ce7;
+}
+
+.login-btn:hover {
+    background: #6c5ce7;
+    color: white;
 }
 
 .book-btn {
-    background: #2563eb;
+    background: #6c5ce7;
     color: white;
+}
+
+.book-btn:hover {
+    background: #7c6ff0;
 }
 
 
@@ -78,8 +90,8 @@ body {
     height: 500px;
 
     background: linear-gradient(
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
+        rgba(8, 11, 29, 0.65),
+        rgba(8, 11, 29, 0.65)
     ),
     url("../images/hotel.jpg");
 
@@ -107,6 +119,7 @@ body {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 30px;
+    color: #d8daf0;
 }
 
 
@@ -123,16 +136,26 @@ body {
     text-decoration: none;
     padding: 13px 25px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .primary-btn {
-    background: #2563eb;
+    background: #6c5ce7;
     color: white;
+}
+
+.primary-btn:hover {
+    background: #7c6ff0;
 }
 
 .secondary-btn {
     border: 1px solid white;
     color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #080b1d;
 }
 
 
@@ -141,11 +164,13 @@ body {
 .features {
     padding: 60px 40px;
     text-align: center;
+    background: #080b1d;
 }
 
 .features h2 {
     font-size: 32px;
     margin-bottom: 35px;
+    color: white;
 }
 
 .feature-container {
@@ -157,11 +182,19 @@ body {
 }
 
 .feature-card {
-    background: white;
+    background: #151936;
     padding: 30px;
     border-radius: 10px;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #6c5ce7;
 }
 
 .icon {
@@ -171,10 +204,11 @@ body {
 
 .feature-card h3 {
     margin-bottom: 12px;
+    color: white;
 }
 
 .feature-card p {
-    color: #777;
+    color: #a5acd6;
     line-height: 1.6;
 }
 
@@ -182,11 +216,13 @@ body {
 /* Footer */
 
 footer {
-    background: #1f2937;
+    background: #151936;
     color: white;
     text-align: center;
 
     padding: 30px;
+
+    border-top: 1px solid #282d52;
 }
 
 footer h3 {

@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    background: #080b1d;
+    color: white;
 }
 
 .container {
@@ -15,6 +15,9 @@ body {
     max-width: 1100px;
     margin: 30px auto;
 }
+
+
+/* Header */
 
 .header {
     display: flex;
@@ -26,28 +29,38 @@ body {
 .header h1 {
     font-size: 30px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .header p {
-    color: #777;
+    color: #a5acd6;
 }
 
 .back-btn {
     padding: 10px 18px;
     border: none;
-    background: #555;
+    background: #4b5563;
     color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+.back-btn:hover {
+    background: #6b7280;
+}
+
+
+/* Room Card */
+
 .room-card {
-    background: white;
+    background: #151936;
     display: flex;
     gap: 30px;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px #ddd;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .room-image {
@@ -68,7 +81,11 @@ body {
 .room-info h2 {
     font-size: 28px;
     margin-bottom: 12px;
+    color: white;
 }
+
+
+/* Status */
 
 .status {
     display: inline-block;
@@ -78,9 +95,12 @@ body {
 }
 
 .available {
-    background: #d4edda;
-    color: #155724;
+    background: #243b35;
+    color: #86efac;
 }
+
+
+/* Details */
 
 .details {
     display: grid;
@@ -90,30 +110,38 @@ body {
 }
 
 .details strong {
-    color: #555;
+    color: #d8daf0;
 }
 
 .details p {
     margin-top: 5px;
-    color: #777;
+    color: #a5acd6;
 }
 
+
+/* Sections */
+
 .section {
-    background: white;
+    background: #151936;
     margin-top: 25px;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px #ddd;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .section h2 {
     margin-bottom: 15px;
+    color: white;
 }
 
 .section p {
     line-height: 1.6;
-    color: #666;
+    color: #a5acd6;
 }
+
+
+/* Amenities */
 
 .amenities {
     display: flex;
@@ -122,10 +150,15 @@ body {
 }
 
 .amenities span {
-    background: #f1f3f5;
+    background: #10132d;
     padding: 12px 18px;
-    border-radius: 5px;
+    border-radius: 6px;
+    border: 1px solid #282d52;
+    color: #d8daf0;
 }
+
+
+/* Table */
 
 table {
     width: 100%;
@@ -135,14 +168,26 @@ table {
 table th,
 table td {
     padding: 14px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #282d52;
     text-align: left;
 }
 
 table th {
     width: 35%;
-    background: #f8f9fa;
+    background: #10132d;
+    color: white;
 }
+
+table td {
+    color: #d8daf0;
+}
+
+table tr:hover {
+    background: #1d2145;
+}
+
+
+/* Buttons */
 
 .buttons {
     display: flex;
@@ -153,18 +198,31 @@ table th {
 .buttons button {
     padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .edit-btn {
-    background: #007bff;
+    background: #6c5ce7;
+}
+
+.edit-btn:hover {
+    background: #7c6ff0;
 }
 
 .book-btn {
-    background: #28a745;
+    background: #6c5ce7;
 }
+
+.book-btn:hover {
+    background: #7c6ff0;
+}
+
+
+/* Responsive */
 
 @media (max-width: 768px) {
 

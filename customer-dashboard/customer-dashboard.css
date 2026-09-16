@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    background: #080b1d;
+    color: white;
 }
 
 
@@ -16,12 +16,13 @@ body {
 .sidebar {
     width: 240px;
     height: 100vh;
-    background: #1f2937;
+    background: #151936;
     color: white;
     position: fixed;
     left: 0;
     top: 0;
     padding: 25px 15px;
+    border-right: 1px solid #282d52;
 }
 
 .sidebar h2 {
@@ -42,12 +43,13 @@ body {
     color: white;
     text-decoration: none;
     padding: 14px 15px;
-    border-radius: 6px;
+    border-radius: 7px;
+    transition: 0.3s;
 }
 
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
-    background: #374151;
+    background: #6c5ce7;
 }
 
 
@@ -62,27 +64,31 @@ body {
 /* Header */
 
 .top-header {
-    background: white;
+    background: #151936;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .top-header h1 {
     margin-bottom: 5px;
+    color: white;
 }
 
 .top-header p {
-    color: #777;
+    color: #a5acd6;
 }
 
 .customer-info {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #d8daf0;
 }
 
 
@@ -96,30 +102,34 @@ body {
 }
 
 .card {
-    background: white;
+    background: #151936;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card h3 {
-    color: #666;
+    color: #a5acd6;
     margin-bottom: 15px;
 }
 
 .card p {
     font-size: 25px;
     font-weight: bold;
+    color: white;
 }
 
 
 /* Sections */
 
 .section-box {
-    background: white;
+    background: #151936;
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 25px;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .section-header {
@@ -129,17 +139,24 @@ body {
     margin-bottom: 20px;
 }
 
+.section-header h2 {
+    color: white;
+}
+
 .section-header button {
     border: none;
-    background: #2563eb;
+    background: #6c5ce7;
     color: white;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .section-header button:hover {
-    background: #1d4ed8;
+    background: #7c6ff0;
+    transform: translateY(-2px);
 }
 
 
@@ -152,19 +169,21 @@ body {
 }
 
 .booking-details div {
-    background: #f8fafc;
+    background: #10132d;
     padding: 15px;
-    border-radius: 6px;
+    border-radius: 7px;
+    border: 1px solid #282d52;
 }
 
 .booking-details span {
     display: block;
-    color: #777;
+    color: #a5acd6;
     margin-bottom: 8px;
 }
 
 .status {
-    color: green;
+    color: #86efac;
+    font-weight: bold;
 }
 
 
@@ -179,20 +198,29 @@ table th,
 table td {
     padding: 14px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #282d52;
 }
 
 table th {
-    background: #f8fafc;
+    background: #10132d;
+    color: white;
+}
+
+table td {
+    color: #d8daf0;
+}
+
+table tr:hover {
+    background: #1d2145;
 }
 
 .confirmed {
-    color: green;
+    color: #86efac;
     font-weight: bold;
 }
 
 .completed {
-    color: #2563eb;
+    color: #93c5fd;
     font-weight: bold;
 }
 

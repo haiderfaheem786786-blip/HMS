@@ -1,0 +1,44 @@
+console.log("Customer Dashboard Loaded");
+let dashboardLink = document.getElementById("dashboard-link");
+dashboardLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    // Redirect to the customer dashboard page
+    window.location.href = "../customer-dashboard/customer-dashboard.html";
+});
+let myBookingsLink = document.getElementById("my-bookings-link");
+myBookingsLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    // Redirect to the my bookings page
+    window.location.href = "../customer-dashboard/my-bookings.html";
+});
+let bookRoomLink = document.getElementById("book-room-link");
+bookRoomLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    // Redirect to the book room page
+    window.location.href = "../customer-dashboard/book-room.html";
+});
+let paymentsLink = document.getElementById("payments-link");
+paymentsLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    // Redirect to the payments page
+    window.location.href = "../customer-dashboard/payments.html";
+});
+let profileLink = document.getElementById("profile-link");
+profileLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    // Redirect to the profile page
+    window.location.href = "../customer-dashboard/profile.html";
+});
+let logoutLink = document.getElementById("logout-link");
+logoutLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    // Redirect to the logout page
+    window.location.href = "../customer-dashboard/logout.html";
+});          
+let viewDetailsBtn = document.getElementById("view-details-btn"); 
+viewDetailsBtn.addEventListener("click", function(event) {
+    event.preventDefault();                 
+    // Redirect to the view details page
+   window.location.href = "../customer-dashboard/view-details.html";
+});
+                                   

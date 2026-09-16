@@ -6,14 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
-    color: #333;
+    background: #080b1d;
+    color: white;
 }
 
 .container {
     width: 92%;
     margin: 30px auto;
 }
+
+
+/* Header */
 
 .header {
     display: flex;
@@ -25,46 +28,69 @@ body {
 .header h1 {
     font-size: 30px;
     margin-bottom: 8px;
+    color: white;
 }
 
 .header p {
-    color: #777;
+    color: #a5acd6;
 }
 
 .add-btn {
-    background-color: #1f6feb;
+    background: #6c5ce7;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 6px;
+    border-radius: 7px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .add-btn:hover {
-    background-color: #1558b0;
+    background: #7c6ff0;
+    transform: translateY(-2px);
 }
 
+
+/* Search Box */
+
 .search-box {
-    background-color: white;
+    background: #151936;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 1px solid #282d52;
 }
 
 .search-box input {
     width: 300px;
     padding: 11px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #282d52;
+    border-radius: 7px;
     outline: none;
+    background: #10132d;
+    color: white;
 }
 
+.search-box input::placeholder {
+    color: #777da5;
+}
+
+.search-box input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+}
+
+
+/* Table */
+
 .table-container {
-    background-color: white;
+    background: #151936;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow-x: auto;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 table {
@@ -76,33 +102,46 @@ th,
 td {
     padding: 14px;
     text-align: left;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #282d52;
 }
 
 th {
-    background-color: #f8f9fa;
+    background: #10132d;
+    color: white;
     font-size: 14px;
 }
 
 td {
     font-size: 14px;
+    color: #d8daf0;
 }
+
+tr:hover {
+    background: #1d2145;
+}
+
+
+/* Status */
 
 .status {
     padding: 6px 10px;
     border-radius: 15px;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .active {
-    background-color: #d4edda;
-    color: #155724;
+    background: #243b35;
+    color: #86efac;
 }
 
 .inactive {
-    background-color: #f8d7da;
-    color: #721c24;
+    background: #4a292f;
+    color: #fca5a5;
 }
+
+
+/* Action Buttons */
 
 .edit-btn,
 .delete-btn {
@@ -111,25 +150,30 @@ td {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 5px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .edit-btn {
-    background-color: #ffc107;
-    color: #222;
+    background: #6c5ce7;
+    color: white;
 }
 
 .delete-btn {
-    background-color: #dc3545;
+    background: #7f1d1d;
     color: white;
 }
 
 .edit-btn:hover {
-    background-color: #e0a800;
+    background: #7c6ff0;
 }
 
 .delete-btn:hover {
-    background-color: #c82333;
+    background: #991b1b;
 }
+
+
+/* Responsive */
 
 @media (max-width: 700px) {
 

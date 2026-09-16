@@ -1,4 +1,4 @@
-css
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,8 @@ css
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #080b1d;
+    color: white;
     padding: 30px;
 }
 
@@ -19,11 +20,13 @@ body {
 /* Header */
 
 .header {
-    background-color: #1f2937;
+    background-color: #151936;
     color: white;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 25px;
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .header h1 {
@@ -31,22 +34,23 @@ body {
 }
 
 .header p {
-    color: #d1d5db;
+    color: #a5acd6;
 }
 
 /* Sections */
 
 .section {
-    background-color: white;
+    background-color: #151936;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .section h2 {
     margin-bottom: 20px;
-    color: #1f2937;
+    color: white;
 }
 
 /* Form */
@@ -69,23 +73,41 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #374151;
+    color: white;
 }
 
 .form-group input,
 .form-group select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #282d52;
+    border-radius: 7px;
     font-size: 15px;
     outline: none;
+    background-color: #10132d;
+    color: white;
 }
+
+/* Input Focus */
 
 .form-group input:focus,
 .form-group select:focus,
 textarea:focus {
-    border-color: #2563eb;
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+}
+
+/* Placeholder */
+
+.form-group input::placeholder {
+    color: #777da5;
+}
+
+/* Select Option */
+
+.form-group select option {
+    background-color: #151936;
+    color: white;
 }
 
 /* Textarea */
@@ -93,12 +115,14 @@ textarea:focus {
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #282d52;
+    border-radius: 7px;
     font-size: 15px;
     resize: vertical;
     outline: none;
     font-family: Arial, sans-serif;
+    background-color: #10132d;
+    color: white;
 }
 
 /* Buttons */
@@ -112,26 +136,34 @@ textarea {
 .buttons button {
     padding: 13px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     color: white;
     font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+/* Cancel Button */
 
 .cancel-btn {
-    background-color: #6b7280;
-}
-
-.cancel-btn:hover {
     background-color: #4b5563;
 }
 
+.cancel-btn:hover {
+    background-color: #6b7280;
+    transform: translateY(-2px);
+}
+
+/* Book Button */
+
 .book-btn {
-    background-color: #2563eb;
+    background-color: #6c5ce7;
 }
 
 .book-btn:hover {
-    background-color: #1d4ed8;
+    background-color: #7c6ff0;
+    transform: translateY(-2px);
 }
 
 /* Responsive */
@@ -157,5 +189,9 @@ textarea {
     .buttons button {
         width: 100%;
     }
+}
+ a,
+select {
+    cursor: pointer;
 }
 

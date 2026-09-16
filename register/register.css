@@ -6,23 +6,29 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #080b1d;
+    background: #080b1d;
     color: white;
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 30px;
 }
+
 
 /* Register Container */
 
 .register-container {
     width: 400px;
-    background-color: #151936;
+    background: #151936;
     padding: 35px;
     border-radius: 12px;
     border: 1px solid #282d52;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
+
 
 /* Heading */
 
@@ -30,60 +36,110 @@ body {
     text-align: center;
     margin-bottom: 10px;
     color: white;
+    font-size: 25px;
 }
 
-.register-container p {
+.register-container h2 {
     text-align: center;
-    color: #a5acd6;
     margin-bottom: 25px;
+    color: #8b7cff;
 }
+
 
 /* Form */
 
-.form-group {
-    margin-bottom: 18px;
+#registerForm {
+    display: flex;
+    flex-direction: column;
 }
 
-.form-group label {
-    display: block;
+
+/* Labels */
+
+#registerForm label {
     margin-bottom: 7px;
     color: #d5d8ee;
     font-size: 14px;
 }
 
-.form-group input,
-.form-group select {
+
+/* Inputs and Select */
+
+#registerForm input,
+#registerForm select {
     width: 100%;
     padding: 12px;
+
+    margin-bottom: 18px;
+
     border: 1px solid #282d52;
     border-radius: 6px;
-    background-color: #10132d;
+
+    background: #10132d;
     color: white;
+
     outline: none;
 }
 
-.form-group input:focus,
-.form-group select:focus {
-    border-color: #6c5ce7;
+
+/* Placeholder */
+
+#registerForm input::placeholder {
+    color: #777da5;
 }
+
+
+/* Focus */
+
+#registerForm input:focus,
+#registerForm select:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+}
+
+
+/* Select Option */
+
+#registerForm select option {
+    background: #10132d;
+    color: white;
+}
+
 
 /* Register Button */
 
-.register-btn {
+#registerForm button {
     width: 100%;
     padding: 13px;
-    background-color: #6c5ce7;
+
+    background: #6c5ce7;
     color: white;
+
     border: none;
     border-radius: 6px;
+
     font-size: 16px;
+    font-weight: bold;
+
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 3px;
+
+    transition: 0.3s;
 }
 
-.register-btn:hover {
-    background-color: #8b7cff;
+#registerForm button:hover {
+    background: #7c6ff0;
 }
+
+
+/* Message */
+
+#message {
+    text-align: center;
+    color: #86efac;
+    margin-top: 15px;
+}
+
 
 /* Login Link */
 
@@ -96,18 +152,28 @@ body {
 .login-link a {
     color: #8b7cff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .login-link a:hover {
     text-decoration: underline;
 }
 
+
 /* Responsive */
 
 @media (max-width: 500px) {
 
+    body {
+        padding: 15px;
+    }
+
     .register-container {
-        width: 90%;
+        width: 100%;
         padding: 25px;
+    }
+
+    .register-container h1 {
+        font-size: 22px;
     }
 }
