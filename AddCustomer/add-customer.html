@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Customer</title>
+
+    <link rel="stylesheet" href="add-customer.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Add Customer</h1>
+            <p>Add a new hotel customer</p>
+        </div>
+
+        <form id="customerForm">
+
+            <div class="form-group">
+                <label>Customer Name</label>
+                <input type="text" id="customerName" placeholder="Enter customer name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" id="customerPhone" placeholder="Enter phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="customerEmail" placeholder="Enter email address" required>
+            </div>
+
+            <div class="form-group">
+                <label>CNIC</label>
+                <input type="text" id="customerCNIC" placeholder="Enter CNIC number" required>
+            </div>
+
+            <button type="submit" class="add-btn">Add Customer</button>
+
+        </form>
+
+    </div>
+
+    <script src="add-customer.js"></script>
+
+</body>
+
+</html>

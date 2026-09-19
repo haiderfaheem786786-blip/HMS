@@ -157,6 +157,9 @@ td {
 tr:hover {
     background: #1d2145;
 }
+td:last-child {
+    white-space: nowrap;
+}
 
 
 /* Status */
@@ -219,7 +222,12 @@ tr:hover {
 .delete-btn:hover {
     background: #991b1b;
 }
-
+.view-btn,
+.delete-btn {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
 
 /* Responsive */
 

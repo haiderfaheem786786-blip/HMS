@@ -1,18 +1,8 @@
 let bookBtn = document.getElementById('bookBtn');
 bookBtn.addEventListener('click', function(event) {
     event.preventDefault(); 
-    let fullName = document.getElementById('fullName').value;
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
-    let cnic = document.getElementById('cnic').value;
-    let roomNumber = document.getElementById('roomNumber').value;
-    let roomType = document.getElementById('roomType').value;
-    let guests = document.getElementById('guests').value;
-    let numberOfRooms = document.getElementById('numberOfRooms').value;
-    let checkInDate = document.getElementById('checkInDate').value;
-    let checkOutDate = document.getElementById('checkOutDate').value;
-    if(fullName.trim() === '' || email.trim() === '' || phone.trim() === '' || cnic.trim() === '' || roomNumber.trim() === '' || roomType.trim() === '' || guests.trim() === '' || numberOfRooms.trim() === '' || checkInDate.trim() === '' || checkOutDate.trim() === '')  {
-        alert('Please fill in all the required fields.');
+   
+    d fields.');
         return;
     }
     let checkIn = new Date(checkInDate);
