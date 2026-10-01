@@ -205,6 +205,20 @@ tr:hover {
 .delete-btn:hover {
     background: #991b1b;
 }
+.back-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #6d28d9;
+}
 
 
 /* Responsive */

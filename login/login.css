@@ -99,7 +99,21 @@ body {
     background: #7c6ff0;
     transform: translateY(-2px);
 }
+.register-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
 
+.register-btn:hover {
+    background: #7c6ff0;
+}
 /* Message */
 #message {
     text-align: center;

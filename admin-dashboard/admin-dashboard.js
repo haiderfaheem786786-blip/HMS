@@ -50,3 +50,18 @@ cards.forEach(card => {
          console.log("Clicked link:", this.innerText);
     });
 });
+let reportsLink = document.getElementById("reports-link");
+reportsLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "../reports/reports.html";
+});
+let settingsLink = document.getElementById("settings-link");
+settingsLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "../settings/settings.html";
+});
+let logoutLink = document.getElementById("logout-link");
+logoutLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "../login/login.html";
+});

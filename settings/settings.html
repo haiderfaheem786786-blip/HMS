@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+    <h1>Settings</h1>
+    <p>Manage hotel settings.</p>
+
+    <hr>
+
+    <h2>Hotel Settings</h2>
+
+    <form id="settingsForm">
+
+        <label for="hotelName">Hotel Name</label>
+        <input type="text" id="hotelName" value="My Hotel">
+
+        <label for="roomRate">Room Rate</label>
+        <input type="number" id="roomRate" value="15000">
+
+        <label for="currency">Currency</label>
+        <select id="currency">
+           <option value="PKR">PKR - Pakistani Rupee</option>
+<option value="USD">USD - US Dollar</option>
+<option value="EUR">EUR - Euro</option>
+<option value="GBP">GBP - British Pound</option>
+<option value="AED">AED - UAE Dirham</option>
+<option value="SAR">SAR - Saudi Riyal</option>
+<option value="CAD">CAD - Canadian Dollar</option>
+<option value="AUD">AUD - Australian Dollar</option>
+<option value="JPY">JPY - Japanese Yen</option>
+<option value="CNY">CNY - Chinese Yuan</option>
+<option value="QAR">QAR - Qatari Riyal</option>
+<option value="KWD">KWD - Kuwaiti Dinar</option>
+<option value="BHD">BHD - Bahraini Dinar</option>
+<option value="OMR">OMR - Omani Rial</option>
+        </select>
+
+        <button type="submit">Save Settings</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <a href="../admin-dashboard/admin-dashboard.html">Back to Dashboard</a>
+
+    <script src="settings.js"></script>
+
+</body>
+</html>
+

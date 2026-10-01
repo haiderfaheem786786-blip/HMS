@@ -41,3 +41,12 @@ generateBtn.addEventListener('click', function() {
     document.getElementById('grandTotal').textContent = `Rs. ${finalAmount.toFixed(2)}`;
     alert('Bill generated successfully!');
 });
+let paymentMethod = document.getElementById("paymentMethod");
+let otherPaymentBox = document.getElementById("otherPaymentBox");
+paymentMethod.addEventListener("change", function() {
+    if (paymentMethod.value === "Other") {
+        otherPaymentBox.style.display = "block";
+    } else {
+        otherPaymentBox.style.display = "none";
+    }
+});

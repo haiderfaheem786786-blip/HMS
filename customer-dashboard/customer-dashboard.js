@@ -9,36 +9,39 @@ let myBookingsLink = document.getElementById("my-bookings-link");
 myBookingsLink.addEventListener("click", function(event) {
     event.preventDefault();
     // Redirect to the my bookings page
-    window.location.href = "../customer-dashboard/my-bookings.html";
+    window.location.href = "../my-bookings/my-bookings.html";
 });
 let bookRoomLink = document.getElementById("book-room-link");
 bookRoomLink.addEventListener("click", function(event) {
     event.preventDefault();
     // Redirect to the book room page
-    window.location.href = "../customer-dashboard/book-room.html";
+    window.location.href = "../book-room/book-room.html";
 });
 let paymentsLink = document.getElementById("payments-link");
 paymentsLink.addEventListener("click", function(event) {
     event.preventDefault();
     // Redirect to the payments page
-    window.location.href = "../customer-dashboard/payments.html";
+    window.location.href = "../payments/payments.html";
 });
 let profileLink = document.getElementById("profile-link");
 profileLink.addEventListener("click", function(event) {
     event.preventDefault();
     // Redirect to the profile page
-    window.location.href = "../customer-dashboard/profile.html";
+    window.location.href = "../profile/profile.html";
 });
 let logoutLink = document.getElementById("logout-link");
 logoutLink.addEventListener("click", function(event) {
     event.preventDefault();
-    // Redirect to the logout page
-    window.location.href = "../customer-dashboard/logout.html";
-});          
+    window.location.href = "../login/login.html";
+});        
 let viewDetailsBtn = document.getElementById("view-details-btn"); 
 viewDetailsBtn.addEventListener("click", function(event) {
     event.preventDefault();                 
     // Redirect to the view details page
    window.location.href = "../customer-dashboard/view-details.html";
 });
-                                   
+let userData = JSON.parse(localStorage.getItem("userData"));
+if (userData) {
+    document.getElementById("welcomeMessage").textContent =
+        "Welcome back, " + userData.name + "!";
+}

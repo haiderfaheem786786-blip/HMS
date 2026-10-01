@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Details</title>
+
+    <link rel="stylesheet" href="order-details.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <h1>Order Details</h1>
+                <p>View restaurant order information</p>
+            </div>
+
+           <button class="back-btn" onclick="window.location.href='../restaurant/restaurant.html'">Back</button>
+
+        </div>
+
+
+        <div class="details-card">
+
+            <h2>Order Information</h2>
+
+            <div class="details">
+
+                <div class="detail-item">
+                    <span>Order ID</span>
+                    <strong id="orderId"></strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Customer</span>
+                    <strong id="customerName"></strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Room</span>
+                    <strong id="room"></strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Items</span>
+                   <input type="text" id="items" value="Biryani, Coke">
+                </div>
+<div class="detail-item">
+    <span>Quantity</span>
+
+    <div class="quantity-box">
+        <button type="button" id="minusBtn">−</button>
+        <span id="quantity">1</span>
+        <button type="button" id="plusBtn">+</button>
+    </div>
+
+</div>      <div class="detail-item">
+                    <span>Amount</span>
+                  <input type="number" id="amount" value="1200">
+                </div>
+
+                <div class="detail-item">
+                    <span>Date</span>
+                    <strong id="orderDate">07 Sep 2026</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Status</span>
+                    <strong id="orderStatus">Completed</strong>
+                </div>
+<button id="updateBtn">Update Order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="order-details.js"></script>
+
+</body>
+</html>
+

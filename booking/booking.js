@@ -1,7 +1,6 @@
 let bookBtn = document.getElementById('bookBtn');
 bookBtn.addEventListener('click', function(event) {
     event.preventDefault(); 
-   
     d fields.');
         return;
     }

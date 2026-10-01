@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Details</title>
+
+    <link rel="stylesheet" href="review-details.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div>
+                <h1>Review Details</h1>
+                <p>View customer review information</p>
+            </div>
+
+          <div class="buttons">
+
+    <button class="back-btn" onclick="history.back()">Back</button>
+
+    <button class="delete-btn" id="deleteBtn">Delete</button>
+
+</div>
+        </div>
+
+        <!-- Review Details Card -->
+        <div class="details-card">
+
+            <h2>Review Information</h2>
+
+            <div class="details">
+
+                <div class="detail-item">
+                    <span>Review ID</span>
+                    <strong id="reviewId">#RV001</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Customer</span>
+                    <strong id="customerName">Ali</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Room</span>
+                    <strong id="room">101</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Rating</span>
+                    <strong id="rating">⭐⭐⭐⭐⭐</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Review</span>
+                    <strong id="reviewComment">
+                        Excellent service and clean room.
+                    </strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Date</span>
+                    <strong id="reviewDate">07 Sep 2026</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Status</span>
+                    <strong id="reviewStatus">Approved</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="review-details.js"></script>
+
+</body>
+</html>
+

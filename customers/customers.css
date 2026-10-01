@@ -59,8 +59,30 @@ body {
     background: #7c6ff0;
     transform: translateY(-2px);
 }
+.back-btn {
+    background: transparent;
+    color: #d5d8ee;
+    border: 1px solid #6c5ce7;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
 
+.back-btn:hover {
+    background: #6c5ce7;
+    color: white;
+}
 
+.header-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
 /* Search */
 
 .search-section {

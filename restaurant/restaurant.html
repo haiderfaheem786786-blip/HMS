@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +9,31 @@
 
     <link rel="stylesheet" href="restaurant.css">
 </head>
+
 <body>
 
     <div class="container">
 
+        <!-- Header -->
         <div class="header">
+
             <div>
                 <h1>Restaurant Management</h1>
                 <p>Manage hotel restaurant orders and meals</p>
             </div>
 
-            <button class="add-btn">+ Add Order</button>
+            <div>
+                <button id="addBtn" class="add-btn">+ Add Order</button>
+                <br>
+                <a href="#" class="back-btn" id="backBtn">
+                    Back
+                </a>
+            </div>
+
         </div>
 
+
+        <!-- Cards -->
         <div class="cards">
 
             <div class="card">
@@ -45,15 +58,26 @@
 
         </div>
 
+
+        <!-- Search Box -->
         <div class="search-box">
-            <input type="text" placeholder="Search order...">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search order..."
+            >
+
         </div>
 
+
+        <!-- Orders Table -->
         <div class="table-container">
 
             <table>
 
                 <thead>
+
                     <tr>
                         <th>Order ID</th>
                         <th>Customer</th>
@@ -64,72 +88,125 @@
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
+                    <!-- Order 1 -->
                     <tr>
+
                         <td>#ORD001</td>
+
                         <td>Ali</td>
+
                         <td>101</td>
+
                         <td>Biryani, Coke</td>
+
                         <td>Rs. 1,200</td>
+
                         <td>07 Sep 2026</td>
+
                         <td>
-                            <span class="status completed">Completed</span>
+                            <span class="status completed">
+                                Completed
+                            </span>
                         </td>
+
                         <td>
                             <button class="view-btn">View</button>
                             <button class="delete-btn">Delete</button>
                         </td>
+
                     </tr>
 
+
+                    <!-- Order 2 -->
                     <tr>
+
                         <td>#ORD002</td>
+
                         <td>Ahmed</td>
+
                         <td>205</td>
+
                         <td>Pizza, Juice</td>
+
                         <td>Rs. 1,800</td>
+
                         <td>07 Sep 2026</td>
+
                         <td>
-                            <span class="status pending">Pending</span>
+                            <span class="status pending">
+                                Pending
+                            </span>
                         </td>
+
                         <td>
                             <button class="view-btn">View</button>
                             <button class="delete-btn">Delete</button>
                         </td>
+
                     </tr>
 
+
+                    <!-- Order 3 -->
                     <tr>
+
                         <td>#ORD003</td>
+
                         <td>Usman</td>
+
                         <td>302</td>
+
                         <td>Burger, Fries</td>
+
                         <td>Rs. 950</td>
+
                         <td>07 Sep 2026</td>
+
                         <td>
-                            <span class="status preparing">Preparing</span>
+                            <span class="status preparing">
+                                Preparing
+                            </span>
                         </td>
+
                         <td>
                             <button class="view-btn">View</button>
                             <button class="delete-btn">Delete</button>
                         </td>
+
                     </tr>
 
+
+                    <!-- Order 4 -->
                     <tr>
+
                         <td>#ORD004</td>
+
                         <td>Hassan</td>
+
                         <td>103</td>
+
                         <td>Chicken Karahi</td>
+
                         <td>Rs. 2,500</td>
+
                         <td>06 Sep 2026</td>
+
                         <td>
-                            <span class="status completed">Completed</span>
+                            <span class="status completed">
+                                Completed
+                            </span>
                         </td>
+
                         <td>
                             <button class="view-btn">View</button>
                             <button class="delete-btn">Delete</button>
                         </td>
+
                     </tr>
 
                 </tbody>
@@ -140,7 +217,10 @@
 
     </div>
 
+
+    <!-- JavaScript -->
     <script src="restaurant.js"></script>
 
 </body>
 </html>
+

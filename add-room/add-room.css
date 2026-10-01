@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b1d;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.header p {
+    color: #a5acd6;
+}
+
+.back-btn {
+    background: transparent;
+    color: #d5d8ee;
+    border: 1px solid #6c5ce7;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background: #6c5ce7;
+    color: white;
+}
+
+.form-box {
+    background: #151936;
+    border: 1px solid #282d52;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #d5d8ee;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 12px;
+    margin-bottom: 18px;
+    background: #10132d;
+    color: white;
+    border: 1px solid #282d52;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #6c5ce7;
+}
+
+.save-btn {
+    margin-top: 5px;
+    padding: 12px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    background: #7c6ff0;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    color: #86efac;
+}
+

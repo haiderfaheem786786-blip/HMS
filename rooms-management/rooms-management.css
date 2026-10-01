@@ -18,14 +18,24 @@ body {
 
 
 /* Header */
-
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 25px;
 }
+.header {
+    position: relative;
+}
 
+.add-room-btn,
+.back-btn {
+    display: block;
+}
+
+.add-room-btn {
+    margin-bottom: 10px;
+}
 .header h1 {
     font-size: 30px;
     margin-bottom: 5px;
@@ -36,7 +46,7 @@ body {
     color: #a5acd6;
 }
 
-.add-btn {
+.add-room-btn  {
     background: #6c5ce7;
     color: white;
     border: none;
@@ -50,6 +60,22 @@ body {
 .add-btn:hover {
     background: #7c6ff0;
     transform: translateY(-2px);
+}
+.back-btn {
+    background: transparent;
+    color: #d5d8ee;
+    border: 1px solid #6c5ce7;
+    padding: 12px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #6c5ce7;
+    color: white;
 }
 
 

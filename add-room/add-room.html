@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Room</title>
+
+    <link rel="stylesheet" href="add-room.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div>
+                <h1>Add New Room</h1>
+                <p>Add a new room to the hotel</p>
+            </div>
+
+            <a href="../rooms-management/rooms-management.html" class="back-btn">
+                Back
+            </a>
+        </div>
+
+        <div class="form-box">
+
+            <form id="roomForm">
+
+                <label for="roomNumber">Room Number</label>
+                <input type="number" id="roomNumber" placeholder="Enter room number" required>
+
+                <label for="roomType">Room Type</label>
+                <select id="roomType" required>
+                    <option value="">Select Room Type</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Family">Family</option>
+                    <option value="Luxury">Luxury</option>
+                </select>
+
+                <label for="floor">Floor</label>
+                <input type="text" id="floor" placeholder="Example: 1st" required>
+
+                <label for="capacity">Capacity</label>
+                <input type="number" id="capacity" placeholder="Number of guests" required>
+
+                <label for="price">Price / Night</label>
+                <input type="number" id="price" placeholder="Enter price" required>
+
+                <label for="status">Status</label>
+                <select id="status" required>
+                    <option value="available">Available</option>
+                    <option value="occupied">Occupied</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+
+                <button type="submit" class="save-btn">
+                    Save Room
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <script src="add-room.js"></script>
+
+</body>
+</html>
+

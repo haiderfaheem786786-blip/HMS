@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b1d;
+    color: white;
+}
+
+.container {
+    width: 92%;
+    margin: 30px auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #a5acd6;
+}
+
+/* Back Button */
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background: #6d28d9;
+}
+
+/* Food Menu */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Food Card */
+
+.food-card {
+    background: #151936;
+    border: 1px solid #282d52;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.food-card h2 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.food-card p {
+    color: #a5acd6;
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Order Button */
+.quantity-box {
+    margin-bottom: 15px;
+}
+.order-btn {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background: #7c6ff0;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
